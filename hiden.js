@@ -1,8 +1,8 @@
 (function(){
   'use strict';
-  
-  kintone.eventS.on('app.recod.detail.show',function(event){
-    kintone.app.record.setFiledShown('company_code',false);
-    retrun event;
+
+  kintone.events.on('app.record.detail.show', function(event){
+    kintone.app.record.setFieldShown('company_code', false);
+    return event;
   });
 })();
